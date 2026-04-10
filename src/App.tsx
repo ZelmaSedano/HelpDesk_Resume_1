@@ -1,119 +1,93 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.tsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+      <div className="resume" style={{backgroundColor: 'white'}}>
 
-      <div className="ticks"></div>
-
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
+        {/* header */}
+        <div className="header">
+          <h1>VAL SEDANO</h1>
+          <h2>IT Support Specialist</h2>
+          <div className="contact">
+            <span>zvsedano@gmail.com</span> •
+            <span>224.482.8189</span> •
+            <span>Round Lake, IL</span>
+          </div>
         </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
+        {/* summary */}
+        <div className="section">
+          <h3>SUMMARY</h3>
+          <p>Detail-oriented professional with over 9 years of experience improving office operations, documentation, and digital systems.</p>
+        </div>
+
+        {/* experience */}
+        <div className="section">
+          <h3>EXPERIENCE</h3>
+
+          <div className="job-1">
+            <div className="job-header">
+              <h4>Office Manager</h4>
+              <span>WebCraft Labs</span>
+              <span className="dates">2025-present</span>
+            </div>
+            <ul>
+              <li>Serve as the primary point of contact for clients, handling inquiries, scheduling, invoicing, contract management, and relationship coordination.</li>
+              <li>Provide UX design and IT support to Lead Developer.</li>
+            </ul>
+          </div>
+
+          <div className="job">
+            <div className="job-header">
+              <h4>Junior Software Engineer</h4>
+              <span>Sony PlayStation</span>
+              <span className="dates">2021-2025</span>
+            </div>
+            <ul>
+              <li>Engineered 3+ responsive, partner-facing websites used by gaming partners.</li>
+              <li>Crafted a comprehensive internal onboarding suite, reducing new engineer ramp-up by 90%.</li>
+            </ul>
+          </div>
+
+          <div className="job">
+            <div className="job-header">
+              <h4>Intake Coordinator/Bookkeeper</h4>
+              <span>Dyrenes Klinnik</span>
+              <span className="dates">2017-2020</span>
+            </div>
+            <ul>
+              <li>Greeted and signed in incoming patients, registered new patients and managed scheduling.</li>
+              <li>Managed Accounts Receivable/Payable and all invoicing.</li>
+            </ul>
+          </div>
+        </div>
+
+        {/* skills */}
+        <div className="section">
+          <h3> SKILLS</h3>
+          <div className="skills">
+              <ul>
+                <li>QuickBooks</li> 
+                <li>Microsoft Office Suite</li>
+                <li>IT Support</li>
+              </ul>
+          </div>
+        </div>
+
+
+          {/* Education */}
+          <div className="section">
+            <h3>EDUCATION</h3>
+            <div className="education">
+              <h4>Techtonica</h4>
+              <div className='school'>Certificate in Software Engineering, 2021</div>
+
+              <h4>University of Mississippi</h4>
+              <div>BA in Psychology, 2011</div>
+            </div>
+          </div>
+      </div>
     </>
   )
 }
